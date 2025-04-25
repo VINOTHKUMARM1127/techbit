@@ -2,16 +2,17 @@ import React from 'react'
 import Header from './Components/Header'
 import Home from './Components/Home'
 import Footer from './Components/Footer'
-import Display from './Pages/Display'
+import {Router,Routes,Route} from 'axios'
 
 const App = () => {
   return (
-    <>
-      <Header/>
-      <Home/>
-      <Display/>
-      <Footer/>
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 
