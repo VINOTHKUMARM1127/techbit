@@ -1,5 +1,6 @@
 import React from 'react'
 import data from "../data.js"
+import { Link } from 'react-router-dom'
 
 const Display = () => {
 
@@ -9,11 +10,13 @@ const Display = () => {
       <div className='flex flex-wrap gap-6 justify-center text-center py-10 px-2'>
 
         {data.map((val) => (
+          <Link to={`/blog/${val.id}`}>
           <div className='w-[200px] border border-black'>
             <img src={val.image} alt="" />
             <div key={val.id}>{val.name}</div>
             <div>Author:{val.author}</div>
           </div>
+          </Link>
         )
         )}
       </div>
