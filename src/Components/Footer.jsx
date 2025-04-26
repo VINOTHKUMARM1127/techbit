@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className=" text-center py-4">
+    <footer className=" text-center py-4 bg-blue-950 text-white">
 
         <h1 className='text-[1.4em]'>TECH<span className=''>BIT</span></h1>
 
@@ -14,7 +15,7 @@ const Footer = () => {
         <a className='px-4' href="#">Privacy Policy</a>
         <a className='px-4' href="#">FAQ</a>
         <a className='px-4' href="#">About</a>
-        <a className='px-4' href="#">Contact Us</a>
+        <Link  to={`/Contactus`}><span className='px-4'>Contact Us</span></Link>
       </div>
 
     </footer>
