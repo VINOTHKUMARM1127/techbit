@@ -12,9 +12,9 @@ const Footer = () => {
       </div>
 
       <div className="">
-        <a className='px-4' href="#">Privacy Policy</a>
-        <a className='px-4' href="#">FAQ</a>
-        <a className='px-4' href="#">About</a>
+        <Link  to={`/Policies`}><span className='px-4' href="#">Privacy Policy</span></Link>
+        <Link  to={`/Faq`}><span className='px-4' href="#">FAQ</span></Link>
+        <Link  to={`/About`}><span className='px-4' href="#">About</span></Link>
         <Link  to={`/Contactus`}><span className='px-4'>Contact Us</span></Link>
       </div>
 
