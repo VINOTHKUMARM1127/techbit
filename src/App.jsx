@@ -4,6 +4,7 @@ import Home from './Components/Home'
 import Footer from './Components/Footer'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Details from './Pages/Details'
+import Contactus from './Pages/Contactus'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Blog/:id' element={<Details/>} />
+        <Route path='/Contactus' element={<Contactus/>} />
       </Routes>
       <Footer />
     </Router>
