@@ -11,7 +11,7 @@ const Display = () => {
 
         {data.map((val,key) => (
           <Link key={key} to={`/blog/${val.id}`}>
-          <div className='w-[200px] border border-black'>
+          <div className='w-[150px] md:w-[200px] border border-black'>
             <img src={val.image} alt="" />
             <div key={val.id}>{val.name}</div>
             <div>Author:{val.author}</div>
