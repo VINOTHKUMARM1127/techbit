@@ -6,14 +6,18 @@ const Details = () => {
 
   const id = useParams();
   console.log(id)
+  const num = blog.find((e)=> e.id == id.id)
+  console.log(num)
+
   return (
-    {blog.map(num =>{
-      if(num.id.toString() == id)
-      {
-       return(
-        <div>{num.name}</div>
-      )}
-    })}
+        <div className='text-center my-20'>
+          <div className='flex justify-center'>
+            <img className='w-[300px]' src={num.image} alt={num.name}/>
+          </div>
+          <div>{num.name}</div>
+        </div>
+      
+    
   )
 }
 
